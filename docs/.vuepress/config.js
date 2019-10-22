@@ -1,7 +1,7 @@
 module.exports = {
   title: 'vuepress',
   description: '试一下',
-  base: '/blog/'
+  base: '/blog/',
   markdown: {
     lineNumbers: true  // 代码行号显示
   },

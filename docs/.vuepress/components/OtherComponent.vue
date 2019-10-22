@@ -10,8 +10,6 @@ export default {
   name: 'OtherComponent',
   data() {
     return {
-      bgPic: bgPic,
-      errorPic: errorPic,
       errorMsg: '权限不足，请联系管理员开通！',
       linkMsg: '返回',
       code: 403
