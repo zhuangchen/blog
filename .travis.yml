@@ -6,6 +6,9 @@ install:
 script:
   - npm run docs:build
 deploy:
+  name: $NAME
+  email: $EMAIL
+  fqdn: $DOMAIN
   provider: pages
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
