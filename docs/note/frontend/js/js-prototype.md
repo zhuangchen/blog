@@ -20,8 +20,8 @@ basePerson => Object.prototype => null // 原型链
 - proto: 对象的原型
 - propertiesObject: 对象的属性
 
-::: tip
-propertiesObject添加的属性需要添加属性描述符,否则属性不可枚举不可修改
+::: warning propertiesObject
+此参数添加的属性需要添加属性描述符,否则属性不可枚举不可修改
 :::
 
 ```js
