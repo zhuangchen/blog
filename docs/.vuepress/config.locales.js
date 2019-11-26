@@ -1,4 +1,5 @@
 const {enNav, zhNav} = require('./nav')
+const {enSidrbar, zhSidebar} = require('./sidebar')
 const locales = {
   '/en/': {
     lang: 'en-US',
@@ -14,6 +15,14 @@ const locales = {
 const themeConfigLocales = {
   '/en/': {
     nav: enNav,
+    sidebar: {
+      '/en/note/frontend/': [],
+      '/en/note/backend/': [],
+      '/en/note/tool/': [],
+      '/en/note/tip/': [],
+      '/en/share/picture/': [],
+      '/en/life/': []
+    },
     selectText: 'Languages',
     label: 'English',
     ariaLabel: 'Languages',
@@ -28,32 +37,12 @@ const themeConfigLocales = {
   '/': {
     nav: zhNav,
     sidebar: {
-      '/note/frontend/': [
-        {
-          title: 'css',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'html',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'javascript',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: '框架',
-          collapsable: false,
-          children: [
-          ]
-        }
-      ]
+      '/note/frontend/': zhSidebar.getFrontendSidebar(),
+      '/note/backend/': [],
+      '/note/tool/': [],
+      '/note/tip/': [],
+      '/share/picture/': [],
+      '/life/': [],
     },
     lastUpdated: '更新时间',
     selectText: '选择语言',
